@@ -278,7 +278,7 @@ std::vector<uint32_t> SM3::call_hash_sm3(char *filepath)
 
 /*计算当前哈希进度*/
 double progress() {
-	return (double)(hash_rate / hash_all);
+	return (double(hash_rate) / hash_all);
 }
 
 /*测试函数，整合后可以注释掉*/
